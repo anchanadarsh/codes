@@ -1,0 +1,15 @@
+<style>
+    .captcha-box {
+        padding: 20px 10px;
+        background: #eee;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+    }
+</style>
+
+<div class="captcha-box">
+    <h2 class="m-b-md m-t-none">Enter Captcha</h2>
+    <input type="text" class="p-lr-sm" id="mainCaptcha" disabled><i class="fa fa-refresh m-l-sm" onclick="DrawCaptcha()"></i>
+    <br><br>
+    <input type="text" class="p-lr-sm" id="enterCaptcha" name="captcha" onpaste="return false" onchange="ValidCaptcha();">
+</div>

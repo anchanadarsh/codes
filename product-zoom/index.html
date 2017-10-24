@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background: black;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .box img {
+            width: 100%;
+            transition: all 0.5s;
+        }
+        
+        .box:hover img {
+            transform: scale(2);
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                var x = $(".box").offset();
+                alert("Top: " + x.top + " Left: " + x.left);
+            });
+            $(".box").mousemove(function(event) {
+                var x1 = $(".box").offset().left;
+                var y1 = $(".box").offset().top;
+                var x2 = event.pageX;
+                var y2 = event.pageY;
+                var fullx = (400 - x1 - x2);
+                var fully = (400 - y1 - y2);
+                $(".top").text(y1);
+                $(".left").text(x1);
+                $(".x").text(x2);
+                $(".y").text(y2);
+                $(".fullx").text(fullx);
+                $(".fully").text(fully);
+//                $(".box img").css("margin-left", fullx);
+//                $(".box img").css("margin-top", fully);
+            });
+            $(".box").mouseleave(function(event) {
+                $(".box img").css("margin-left", "0");
+                $(".box img").css("margin-top", "0");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="box">
+        <img src="http://imgtops.sourceforge.net/bakeoff/bw.jpg">
+    </div>
+
+    <p>top : <span class="top"></span></p>
+    <p>left : <span class="left"></span></p>
+    <p>x cor : <span class="x"></span></p>
+    <p>y cor : <span class="y"></span></p>
+    <p>fullx : <span class="fullx"></span></p>
+    <p>fully : <span class="fully"></span></p>
+
+    <button>Return the offset coordinates of the p element</button>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .bodyfull {
+            width: 100%;
+            padding-top: 49vh;
+            height: 100vh;
+            background: #f1f1f1;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        .footer-fix {
+            height: 25vh;
+            position: fixed;
+            padding-top: 10vh;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+            background: black;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="bodyfull">
+        <h1>BODY</h1>
+    </div>
+    <div class="clearfix"></div>
+    <div class="footer-fix">
+        <h1>FOOTER</h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var getfooterheight = $(".footer-fix").height();
+            $(".bodyfull").css("margin-bottom", getfooterheight);
+        });
+
+    </script>
+</body>
+
+</html>
