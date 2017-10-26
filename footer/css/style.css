@@ -1,1 +1,65 @@
 /* All custom codes with comment */
+
+.footer1 {
+    background: #aa004b;
+    min-height: 50vh;
+}
+
+.social-icons1 {
+    position: relative;
+    top: calc(25vh - 44px);
+}
+
+.social-icons1 ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.social-icons1 ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.social-icons1 ul li i {
+    color: white;
+    font-size: 48px;
+}
+
+
+/*-------------------------------------------------------------footer2---------------------------------------------------------------*/
+
+.footer2 {
+    background: #333;
+    min-height: 50vh;
+}
+
+.social-icons2 {
+    position: relative;
+    top: calc(25vh - 44px);
+}
+
+.social-icons2 ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.social-icons2 ul li {
+    box-shadow: 5px 5px 15px 0px #222;
+    margin: 0 5px;
+    border-radius: 10px;
+    min-width: 82px;
+    display: inline-block;
+    padding: 20px;
+    background: -webkit-linear-gradient(left, #c8822a, #f1b94c);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #c8822a, #f1b94c);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #c8822a, #f1b94c);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #c8822a, #f1b94c);
+}
+
+.social-icons2 ul li i {
+    color: #333;
+    font-size: 48px;
+}

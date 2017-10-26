@@ -21,6 +21,28 @@
 
 <body>
     <footer>
+        <div class="footer1">
+            <div class="social-icons1">
+                <ul>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-linkedin"></i></li>
+                    <li><i class="fa fa-pinterest"></i></li>
+                    <li><i class="fa fa-youtube"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="social-icons2">
+                <ul>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-linkedin"></i></li>
+                    <li><i class="fa fa-pinterest"></i></li>
+                    <li><i class="fa fa-youtube"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
 
     </footer>
 
