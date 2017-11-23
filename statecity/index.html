@@ -1,0 +1,28 @@
+
+    <select id="state1" name="state" class="form-control" onchange="getcity1();" required>
+            <?php if( $f1['state'] != "") {
+                $stat=$f1['state'];
+             $stateval=mysqli_query($con, "SELECT `id`, `state_name` FROM `state` where state_name='$stat'");
+      $f01val=  mysqli_fetch_array($stateval);
+       $stat_id=$f01val['id'];
+            ?>
+            <option value="<?php echo $stat_id.'_'.$f1['state'];?>"><?php echo $f1['state'];?></option>
+            <?php } ?>
+            <option value="">-----Select State-----</option>
+            <?php
+            $state=mysqli_query($con, "SELECT `id`, `state_name` FROM `state`");
+while($f01=  mysqli_fetch_array($state))
+{
+            ?>
+            <option value="<?php echo $f01['id'].'_'.$f01['state_name']; ?>"><?php echo $f01['state_name']; ?></option>
+                        <?php } ?>
+                                          
+    </select>
+
+    <select id="city1" name="city" class="form-control" required>
+            <?php if( $f1['city'] != "") {?>
+            <option value="<?php echo $f1['city'];?>"><?php echo $f1['city'];?></option>
+            <?php } else{ ?>
+            <option value="">-----Select City-----</option>
+            <?php }?>
+    </select>
