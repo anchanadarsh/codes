@@ -1,0 +1,31 @@
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.full-area{
+    position: relative;
+}
+
+.menu-tab {
+    text-align: center;
+    padding: 15px;
+}
+
+.red-bg {
+    background: red;
+}
+
+.blue-bg {
+    background: blue;
+}
+
+.yellow-bg {
+    background: yellow;
+}
+
+.green-bg {
+    background: green;
+}
