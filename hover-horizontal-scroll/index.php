@@ -38,6 +38,7 @@
             <p>left : <span id="getleft"></span></p>
             <p>window percent : <span id="getwinpercent"></span></p>
             <p>full body width : <span id="getbodywidth"></span></p>
+            <p>reamining width : <span id="remainingwidth"></span></p>
             <p>scroll width : <span id="getscrollwidth"></span></p>
 
             <div class="container-fluid m-t-xxl scroll-outer">
@@ -77,17 +78,19 @@
     <script>
         $(document).ready(function() {
             var winwidth = $(window).outerWidth();
-            $(window).mousemove(function(evt) {
+            $(".scroll-outer").mousemove(function(evt) {
                 var distleft = evt.pageX;
                 var getwinpercent = (distleft * 100) / winwidth;
+                var bodywidth = $(".scroll-outer ul").outerWidth();
+                var remainingwidth = bodywidth - winwidth;
+                var getscrollwidth = (remainingwidth * getwinpercent) / 100;
+                $(".scroll-outer ul").css("left", -getscrollwidth);
+
+                $("#remainingwidth").text(bodywidth);
+                $("#getbodywidth").text(bodywidth);
                 $("#getleft").text(distleft);
                 $("#getwinpercent").text(getwinpercent);
-                var bodywidth = $(".scroll-outer ul").outerWidth();
-                $("#getbodywidth").text(bodywidth);
-                var getscrollwidth = (bodywidth * getwinpercent) / 100;
                 $("#getscrollwidth").text(getscrollwidth);
-                //                $(window).scrollTop(100);
-                $(".scroll-outer ul").css("left", -getscrollwidth);
             });
 
         });
