@@ -1,0 +1,86 @@
+/* All custom codes with comment */
+
+$color-primary:#1BD3E3;
+$color-secondary:#F41D07;
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 200px;
+    font-weight: bolder;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.relative-box {
+    position: relative;
+    width: 100%;
+    float: left;
+    min-height: 1px;
+}
+
+.full-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.default-transition {
+    transition: all 0.3s linear;
+}
+
+#mix-color-sec {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    @extend .relative-box;
+    .blue-text-area {
+        @extend .full-overlay;
+        color: $color-primary;
+        z-index: 5;
+        opacity: 0.7;
+        padding: 75px 100px;
+        mix-blend-mode:multiply;
+    }
+    .blue-bg-area {
+        @extend .full-overlay;
+        @extend .default-transition;
+        background: $color-primary;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        mix-blend-mode:multiply;
+    }
+    .red-text-area {
+        @extend .full-overlay;
+        color: $color-secondary;
+        z-index: 3;
+        opacity: 0.7;
+        padding: 75px 100px;
+        mix-blend-mode:multiply;
+    }
+    .red-bg-area {
+        @extend .full-overlay;
+        @extend .default-transition;
+        background: $color-secondary;
+        z-index: 4;
+        left: unset;
+        top: unset;
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+        mix-blend-mode:multiply;
+    }
+    .dummy-primary-bg {
+        @extend .blue-bg-area;
+        z-index: 6;
+    }
+    .dummy-secondary-bg {
+        @extend .red-bg-area;
+        z-index: 6;
+    }
+}
