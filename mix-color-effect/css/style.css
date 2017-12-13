@@ -32,7 +32,7 @@ body {
   #mix-color-sec .blue-text-area {
     color: #1BD3E3;
     z-index: 5;
-    opacity: 0.7;
+/*    opacity: 0.7;*/
     padding: 75px 100px;
     mix-blend-mode: multiply; }
   #mix-color-sec .blue-bg-area, #mix-color-sec .dummy-primary-bg {
@@ -44,7 +44,7 @@ body {
   #mix-color-sec .red-text-area {
     color: #F41D07;
     z-index: 3;
-    opacity: 0.7;
+/*    opacity: 0.7;*/
     padding: 75px 100px;
     mix-blend-mode: multiply; }
   #mix-color-sec .red-bg-area, #mix-color-sec .dummy-secondary-bg {
