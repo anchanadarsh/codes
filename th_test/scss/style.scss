@@ -1,0 +1,395 @@
+@import 'global';
+body,
+html {
+    font-family: $font-secondary;
+    font-size: 14px;
+    color: $color-primary;
+    @include sm-down {
+        font-size: 14px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-primary;
+}
+
+.custom-navbar {
+    font-family: $font-primary;
+    margin: 0;
+    border: 0;
+    font-size: 16px;
+    background: white;
+    box-shadow: -5px 2px 20px -8px #333;
+    @extend .relative-box;
+    z-index: 5;
+    .top-blue-nav {
+        padding: 2px;
+        background: $color-blue;
+        font-size: 14px;
+        ul {
+            li {
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    .bottom-navbar {
+        padding: 5px 0px;
+        background: white;
+        .navbar-header {
+            .navbar-brand {
+                @include sm-down {
+                    padding-top: 0;
+                }
+                img {
+                    @include sm-up {
+                        width: 90px;
+                        margin-top: -45px;
+                    }
+                    @include sm-down {
+                        width: 45px;
+                    }
+                }
+            }
+        }
+        .navbar-collapse {
+            .nabvar-nav {
+                li {
+                    a {
+                        padding-top: 20px!important;
+                        padding-bottom: 20px!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#section-carousel {
+    #myCarousel {
+        .carousel-inner {
+            max-height: calc(100vh - 84px);
+            .carousel-caption {
+                top: 25vh;
+                bottom: unset;
+                font-family: $font-primary;
+                @include sm-only {
+                    top: 10vh;
+                }
+                @include xxs-down {
+                    top: 0vh;
+                }
+                h3 {
+                    font-size: 5rem;
+                    @include sm-down {
+                        font-size: 3rem;
+                        margin: 5px;
+                    }
+                }
+                p {
+                    font-size: 2.5rem;
+                    @include sm-down {
+                        font-size: 1.5rem;
+                        margin: 5px;
+                    }
+                }
+                button {
+                    @include sm-down {
+                        font-size: 1.5rem;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#section-aboutus {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .about-sec-left {
+        height: 700px;
+        @include md-down {
+            display: none;
+        }
+        .about-dog-img {
+            position: absolute;
+            bottom: -50px;
+        }
+    }
+    .about-sec-right {
+        .about-dog-swim {
+            @extend .relative-box;
+            .full-overlay {
+                background: rgba(51, 51, 51, 0.2);
+                border-radius: 50%;
+                img {
+                    position: absolute;
+                    left: calc(50% - 45px);
+                    top: calc(50% - 45px);
+                }
+            }
+        }
+        .whychooseus {
+            .wcu-box {
+                margin-top: 20px;
+                padding: 10px;
+                text-align: center;
+                .img-box {
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+#section-facilities {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: -96px;
+    background: $color-blue;
+    color: white;
+    @extend .relative-box;
+    .facility-box {
+        @extend .relative-box;
+        .full-overlay {
+            background: rgba(0, 0, 0, 0.2);
+            @extend .common-transition;
+            .facility-desc {
+                position: absolute;
+                width: 100%;
+                top: calc(50% - 75px);
+                text-align: center;
+            }
+        }
+        &:hover {
+            .full-overlay {
+                background: rgba(251, 168, 50, 0.2);
+            }
+        }
+    }
+    .facility-cat-img {
+        @extend .relative-box;
+        z-index: 2;
+        img {
+            width: 320px;
+            transform: rotate(1deg);
+        }
+    }
+}
+
+#section-blogs {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $color-purple;
+    color: white;
+    @extend .relative-box;
+    .blog-box{
+        @extend .relative-box;
+        background: white;
+        max-height: 500px;
+        .blog-desc{
+            
+        }
+        .blog-img{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+#section-testimonial {
+    background: $color-darkpink;
+    color: $color-primary;
+    @extend .relative-box;
+    .test-box-full {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: white;
+        .test-box-inner {
+            .client-name {
+                margin-top: 72px;
+            }
+            .test-content {
+                @extend .relative-box;
+                margin-top: 80px;
+                margin-bottom: 60px;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    top: -40px;
+                    left: -40px;
+                    width: 30px;
+                    height: 30px;
+                    background: url(../img/testimonial/inverted-comma-left.png);
+                    background-size: cover;
+                    opacity: 0.2;
+                    @include sm-down {
+                        left: -20px;
+                    }
+                }
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    bottom: -40px;
+                    right: -40px;
+                    width: 30px;
+                    height: 30px;
+                    background: url(../img/testimonial/inverted-comma-right.png);
+                    background-size: cover;
+                    opacity: 0.2;
+                    @include sm-down {
+                        right: -20px;
+                    }
+                }
+            }
+            .prevnext {
+                img {
+                    display: inline-block;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+#section-contact {
+    .contact-map {}
+    .contact-dog-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+    }
+    .contact-details {
+        padding-left: 50px;
+        @include sm-down {
+            padding: 15px;
+        }
+        ul {
+            li {
+                display: block;
+                margin-bottom: 10px;
+                font-family: $font-primary;
+                font-size: 20px;
+                cursor: pointer;
+                span {
+                    float: left;
+                    width: 40px;
+                    margin-right: 10px;
+                }
+                p {
+                    float: left;
+                    margin: 0;
+                    line-height: 40px;
+                    @extend .common-transition;
+                    &:hover {
+                        color: $color-orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#section-social {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $color-purple;
+    color: white;
+    .social-box {
+        .full-overlay {
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.2);
+            &:hover {
+                background: rgba(251, 168, 50, 0.2);
+            }
+        }
+    }
+}
+
+#section-factfigure {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $color-blue;
+    color: white;
+    .fnf-box {
+        padding: 30px 20px 0px;
+        margin-top: 25px;
+        .img-box {
+            min-height: 100px;
+        }
+        .f-figure {
+            color: $color-purple;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.footer-main {
+    .social-newsletter {
+        .news-email {
+            .form-group {
+                @extend .relative-box;
+                input {
+                    border-radius: 50px;
+                    border: 1px solid $color-primary;
+                }
+                img {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 34px;
+                }
+            }
+        }
+        ul {
+            li {
+                width: 35px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .quick-links {
+        background-image: url(../img/footer/dog.png);
+        background-size: cover;
+        padding-bottom: 50px;
+        .qlinks {
+            text-transform: uppercase;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            a {
+                @extend .common-transition;
+                &:hover {
+                    color: $color-orange;
+                }
+            }
+        }
+    }
+}
+
+.copyright-section {
+    background: $color-purple;
+    color: white;
+    p {
+        font-size: 12px;
+    }
+    .text-right {
+        @include sm-down {
+            text-align: center;
+        }
+    }
+    @include sm-down {
+        text-align: center;
+    }
+}

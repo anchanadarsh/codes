@@ -1,0 +1,345 @@
+/*Responsiveness mixins*/
+.common-transition, .button-default, .full-overlay, .paw-overlay, #section-facilities .facility-box .full-overlay, #section-facilities .facility-box .paw-overlay, #section-contact .contact-details ul li p, .footer-main .quick-links .qlinks a {
+  transition: all 0.3s linear; }
+
+.button-default {
+  border: 1px solid #fba832;
+  background: transparent;
+  font-family: "Patrick Hand", cursive;
+  color: #fba832;
+  font-size: 20px;
+  padding: 7px 30px;
+  margin-top: 20px;
+  border-radius: 50px; }
+  .button-default:focus {
+    outline: 0; }
+  .button-default:hover {
+    color: white;
+    border: 1px solid #fba832;
+    background: #fba832; }
+  .button-default:active {
+    outline: 0; }
+  @media (max-width: 767px) {
+    .button-default {
+      margin-bottom: 15px; } }
+
+.button-orange {
+  color: white;
+  border: 1px solid #fba832;
+  background: #fba832; }
+
+.section-heading h2 span {
+  font-family: "Source Serif Pro", serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: block;
+  letter-spacing: 1px; }
+
+.font-primary {
+  font-family: "Patrick Hand", cursive; }
+
+.relative-box, .custom-navbar, #section-aboutus .about-sec-right .about-dog-swim, #section-facilities, #section-facilities .facility-box, #section-facilities .facility-cat-img, #section-blogs, #section-blogs .blog-box, #section-testimonial, #section-testimonial .test-box-full .test-box-inner .test-content, .footer-main .social-newsletter .news-email .form-group {
+  position: relative;
+  min-height: 1px;
+  width: 100%;
+  float: left; }
+  .relative-box:after, .custom-navbar:after, #section-aboutus .about-sec-right .about-dog-swim:after, #section-facilities:after, #section-facilities .facility-box:after, #section-facilities .facility-cat-img:after, #section-blogs:after, #section-blogs .blog-box:after, #section-testimonial:after, #section-testimonial .test-box-full .test-box-inner .test-content:after, .footer-main .social-newsletter .news-email .form-group:after {
+    content: '';
+    clear: both; }
+
+.vert-cent {
+  display: table-cell;
+  vertical-align: middle; }
+
+.full-overlay, .paw-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0; }
+
+.paw-overlay {
+  background: url(../img/trans-paws.png);
+  background-size: cover;
+  opacity: 0.5; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+  ul li {
+    display: inline-block; }
+
+a {
+  color: #0d465b; }
+  a:hover {
+    text-decoration: none;
+    color: #0d465b; }
+
+body,
+html {
+  font-family: "Source Serif Pro", serif;
+  font-size: 14px;
+  color: #0d465b; }
+  @media (max-width: 767px) {
+    body,
+    html {
+      font-size: 14px; } }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Patrick Hand", cursive; }
+
+.custom-navbar {
+  font-family: "Patrick Hand", cursive;
+  margin: 0;
+  border: 0;
+  font-size: 16px;
+  background: white;
+  box-shadow: -5px 2px 20px -8px #333;
+  z-index: 5; }
+  .custom-navbar .top-blue-nav {
+    padding: 2px;
+    background: #65c6e7;
+    font-size: 14px; }
+    .custom-navbar .top-blue-nav ul li a {
+      color: white; }
+  .custom-navbar .bottom-navbar {
+    padding: 5px 0px;
+    background: white; }
+    @media (max-width: 767px) {
+      .custom-navbar .bottom-navbar .navbar-header .navbar-brand {
+        padding-top: 0; } }
+    @media (min-width: 768px) {
+      .custom-navbar .bottom-navbar .navbar-header .navbar-brand img {
+        width: 90px;
+        margin-top: -45px; } }
+    @media (max-width: 767px) {
+      .custom-navbar .bottom-navbar .navbar-header .navbar-brand img {
+        width: 45px; } }
+    .custom-navbar .bottom-navbar .navbar-collapse .nabvar-nav li a {
+      padding-top: 20px !important;
+      padding-bottom: 20px !important; }
+
+#section-carousel #myCarousel .carousel-inner {
+  max-height: calc(100vh - 84px); }
+  #section-carousel #myCarousel .carousel-inner .carousel-caption {
+    top: 25vh;
+    bottom: unset;
+    font-family: "Patrick Hand", cursive; }
+    @media (min-width: 640px) and (max-width: 767px) {
+      #section-carousel #myCarousel .carousel-inner .carousel-caption {
+        top: 10vh; } }
+    @media (max-width: 479px) {
+      #section-carousel #myCarousel .carousel-inner .carousel-caption {
+        top: 0vh; } }
+    #section-carousel #myCarousel .carousel-inner .carousel-caption h3 {
+      font-size: 5rem; }
+      @media (max-width: 767px) {
+        #section-carousel #myCarousel .carousel-inner .carousel-caption h3 {
+          font-size: 3rem;
+          margin: 5px; } }
+    #section-carousel #myCarousel .carousel-inner .carousel-caption p {
+      font-size: 2.5rem; }
+      @media (max-width: 767px) {
+        #section-carousel #myCarousel .carousel-inner .carousel-caption p {
+          font-size: 1.5rem;
+          margin: 5px; } }
+    @media (max-width: 767px) {
+      #section-carousel #myCarousel .carousel-inner .carousel-caption button {
+        font-size: 1.5rem;
+        margin: 5px; } }
+
+#section-aboutus {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  #section-aboutus .about-sec-left {
+    height: 700px; }
+    @media (max-width: 1023px) {
+      #section-aboutus .about-sec-left {
+        display: none; } }
+    #section-aboutus .about-sec-left .about-dog-img {
+      position: absolute;
+      bottom: -50px; }
+  #section-aboutus .about-sec-right .about-dog-swim .full-overlay, #section-aboutus .about-sec-right .about-dog-swim .paw-overlay {
+    background: rgba(51, 51, 51, 0.2);
+    border-radius: 50%; }
+    #section-aboutus .about-sec-right .about-dog-swim .full-overlay img, #section-aboutus .about-sec-right .about-dog-swim .paw-overlay img {
+      position: absolute;
+      left: calc(50% - 45px);
+      top: calc(50% - 45px); }
+  #section-aboutus .about-sec-right .whychooseus .wcu-box {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center; }
+    #section-aboutus .about-sec-right .whychooseus .wcu-box .img-box {
+      height: 60px; }
+
+#section-facilities {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: -96px;
+  background: #65c6e7;
+  color: white; }
+  #section-facilities .facility-box .full-overlay, #section-facilities .facility-box .paw-overlay {
+    background: rgba(0, 0, 0, 0.2); }
+    #section-facilities .facility-box .full-overlay .facility-desc, #section-facilities .facility-box .paw-overlay .facility-desc {
+      position: absolute;
+      width: 100%;
+      top: calc(50% - 75px);
+      text-align: center; }
+  #section-facilities .facility-box:hover .full-overlay, #section-facilities .facility-box:hover .paw-overlay {
+    background: rgba(251, 168, 50, 0.2); }
+  #section-facilities .facility-cat-img {
+    z-index: 2; }
+    #section-facilities .facility-cat-img img {
+      width: 320px;
+      transform: rotate(1deg); }
+
+#section-blogs {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #9f4c88;
+  color: white; }
+  #section-blogs .blog-box {
+    background: white;
+    max-height: 500px; }
+    #section-blogs .blog-box .blog-img {
+      position: absolute;
+      bottom: 0; }
+
+#section-testimonial {
+  background: #d9418c;
+  color: #0d465b; }
+  #section-testimonial .test-box-full {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: white; }
+    #section-testimonial .test-box-full .test-box-inner .client-name {
+      margin-top: 72px; }
+    #section-testimonial .test-box-full .test-box-inner .test-content {
+      margin-top: 80px;
+      margin-bottom: 60px; }
+      #section-testimonial .test-box-full .test-box-inner .test-content:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: -40px;
+        left: -40px;
+        width: 30px;
+        height: 30px;
+        background: url(../img/testimonial/inverted-comma-left.png);
+        background-size: cover;
+        opacity: 0.2; }
+        @media (max-width: 767px) {
+          #section-testimonial .test-box-full .test-box-inner .test-content:before {
+            left: -20px; } }
+      #section-testimonial .test-box-full .test-box-inner .test-content:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -40px;
+        right: -40px;
+        width: 30px;
+        height: 30px;
+        background: url(../img/testimonial/inverted-comma-right.png);
+        background-size: cover;
+        opacity: 0.2; }
+        @media (max-width: 767px) {
+          #section-testimonial .test-box-full .test-box-inner .test-content:after {
+            right: -20px; } }
+    #section-testimonial .test-box-full .test-box-inner .prevnext img {
+      display: inline-block;
+      width: 30px; }
+
+#section-contact .contact-dog-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%; }
+#section-contact .contact-details {
+  padding-left: 50px; }
+  @media (max-width: 767px) {
+    #section-contact .contact-details {
+      padding: 15px; } }
+  #section-contact .contact-details ul li {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Patrick Hand", cursive;
+    font-size: 20px;
+    cursor: pointer; }
+    #section-contact .contact-details ul li span {
+      float: left;
+      width: 40px;
+      margin-right: 10px; }
+    #section-contact .contact-details ul li p {
+      float: left;
+      margin: 0;
+      line-height: 40px; }
+      #section-contact .contact-details ul li p:hover {
+        color: #fba832; }
+
+#section-social {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #9f4c88;
+  color: white; }
+  #section-social .social-box .full-overlay, #section-social .social-box .paw-overlay {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2); }
+    #section-social .social-box .full-overlay:hover, #section-social .social-box .paw-overlay:hover {
+      background: rgba(251, 168, 50, 0.2); }
+
+#section-factfigure {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #65c6e7;
+  color: white; }
+  #section-factfigure .fnf-box {
+    padding: 30px 20px 0px;
+    margin-top: 25px; }
+    #section-factfigure .fnf-box .img-box {
+      min-height: 100px; }
+    #section-factfigure .fnf-box .f-figure {
+      color: #9f4c88; }
+    #section-factfigure .fnf-box p {
+      font-size: 18px; }
+
+.footer-main .social-newsletter .news-email .form-group input {
+  border-radius: 50px;
+  border: 1px solid #0d465b; }
+.footer-main .social-newsletter .news-email .form-group img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 34px; }
+.footer-main .social-newsletter ul li {
+  width: 35px;
+  margin-right: 10px; }
+.footer-main .quick-links {
+  background-image: url(../img/footer/dog.png);
+  background-size: cover;
+  padding-bottom: 50px; }
+  .footer-main .quick-links .qlinks {
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .footer-main .quick-links .qlinks a:hover {
+      color: #fba832; }
+
+.copyright-section {
+  background: #9f4c88;
+  color: white; }
+  .copyright-section p {
+    font-size: 12px; }
+  @media (max-width: 767px) {
+    .copyright-section .text-right {
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .copyright-section {
+      text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,101 @@
+@import 'mixin',
+'variable';
+.common-transition {
+    transition: $common-transition;
+}
+
+.button-default {
+    border: 1px solid $color-orange;
+    background: transparent;
+    font-family: $font-primary;
+    color: $color-orange;
+    font-size: 20px;
+    padding: 7px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    @extend .common-transition;
+    &:focus {
+        outline: 0;
+    }
+    &:hover {
+        color: white;
+        border: 1px solid $color-orange;
+        background: $color-orange;
+    }
+    &:active {
+        outline: 0;
+    }
+    @include sm-down{
+        margin-bottom: 15px;
+    }
+}
+
+.button-orange {
+    color: white;
+    border: 1px solid $color-orange;
+    background: $color-orange;
+}
+
+.section-heading {
+    h2 {
+        span {
+            font-family: $font-secondary;
+            text-transform: uppercase;
+            font-size: 12px;
+            display: block;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.font-primary {
+    font-family: $font-primary;
+}
+
+.relative-box {
+    position: relative;
+    min-height: 1px;
+    width: 100%;
+    float: left;
+    &:after {
+        content: '';
+        clear: both;
+    }
+}
+
+.vert-cent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.full-overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    @extend .common-transition;
+}
+
+.paw-overlay {
+    @extend .full-overlay;
+    background: url(../img/trans-paws.png);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+    }
+}
+
+a {
+    color: $color-primary;
+    &:hover {
+        text-decoration: none;
+        color: $color-primary;
+    }
+}
