@@ -25,7 +25,7 @@
     &:active {
         outline: 0;
     }
-    @include sm-down{
+    @include sm-down {
         margin-bottom: 15px;
     }
 }
@@ -97,5 +97,26 @@ a {
     &:hover {
         text-decoration: none;
         color: $color-primary;
+    }
+}
+
+.backtotop {
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    bottom: 30px;
+    width: 50px;
+    cursor: pointer;
+    @extend .common-transition;
+    &.active {
+        right: 30px;
+        opacity: 1;
+    }
+    img {
+        width: 34px;
+        margin: 5px auto;
+    }
+    p {
+        font-size: 8px;
     }
 }

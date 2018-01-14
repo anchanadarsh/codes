@@ -61,5 +61,8 @@
             </div>
         </div>
     </div>
-
+</div>
+<div class="backtotop">
+    <img class="img-responsive" src="img/backtotop.png">
+    <p>BACK TO TOP</p>
 </div>

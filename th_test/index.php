@@ -38,12 +38,10 @@
 
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
+                <img class="img-responsive" src="img/arrow-left.png">
             </a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
+                <img class="img-responsive" src="img/arrow-right.png">
             </a>
         </div>
     </section>
@@ -178,37 +176,77 @@
     </section>
     <div class="clearfix"></div>
     <section id="section-blogs" class="container-fluid p-lr-none">
+        <div class="curve-seperator"></div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
-                    <div class="col-xs-12 m-b-xxl">
+                    <div class="col-xs-12 m-b-xxl wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="0.3s">
                         <div class="section-heading">
                             <h2><span>Blog</span>The Pawfect Journal</h2>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 m-b-lg wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.6s">
                         <div class="blog-box">
-                            <div class="blog-desc"></div>
+                            <div class="share-section">
+                                <img class="img-responsive" width="40px" src="img/pawfect/share-icon.png">
+                                <img class="img-responsive share-icon-1" width="40px" src="img/social-media/facebook.png">
+                                <img class="img-responsive share-icon-2" width="40px" src="img/social-media/instagram.png">
+                                <img class="img-responsive share-icon-3" width="40px" src="img/social-media/twitter.png">
+                            </div>
+                            <div class="blog-desc">
+                                <p class="blog-date">30/04/2016</p>
+                                <h3 class="blog-title">Wiser Care For Your Older Dogs!</h3>
+                                <p class="blog-short-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            </div>
                             <div class="blog-img">
                                 <img class="img-responsive" src="img/pawfect/dog.jpg">
+                                <div class="full-overlay"></div>
                             </div>
+                            <h2 class="read-more text-center">Read More</h2>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 m-b-lg wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.9s">
                         <div class="blog-box">
-                            <div class="blog-desc"></div>
+                            <div class="share-section">
+                                <img class="img-responsive" width="40px" src="img/pawfect/share-icon.png">
+                                <img class="img-responsive share-icon-1" width="40px" src="img/social-media/facebook.png">
+                                <img class="img-responsive share-icon-2" width="40px" src="img/social-media/instagram.png">
+                                <img class="img-responsive share-icon-3" width="40px" src="img/social-media/twitter.png">
+                            </div>
+                            <div class="blog-desc">
+                                <p class="blog-date">30/04/2016</p>
+                                <h3 class="blog-title">Ways To Make Your Puppy Paw-sitively Happy</h3>
+                                <p class="blog-short-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            </div>
                             <div class="blog-img">
                                 <img class="img-responsive" src="img/pawfect/cat.jpg">
+                                <div class="full-overlay"></div>
                             </div>
+                            <h2 class="read-more text-center">Read More</h2>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 m-b-lg wow fadeIn" data-wow-duration="2.5s" data-wow-delay="1.2s">
                         <div class="blog-box">
-                            <div class="blog-desc"></div>
+                            <div class="share-section">
+                                <img class="img-responsive" width="40px" src="img/pawfect/share-icon.png">
+                                <img class="img-responsive share-icon-1" width="40px" src="img/social-media/facebook.png">
+                                <img class="img-responsive share-icon-2" width="40px" src="img/social-media/instagram.png">
+                                <img class="img-responsive share-icon-3" width="40px" src="img/social-media/twitter.png">
+                            </div>
+                            <div class="blog-desc">
+                                <p class="blog-date">30/04/2016</p>
+                                <h3 class="blog-title">Tick Tricks : The Cause & The Cure!</h3>
+                                <p class="blog-short-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            </div>
                             <div class="blog-img">
                                 <img class="img-responsive" src="img/pawfect/puppies.jpg">
+                                <div class="full-overlay"></div>
                             </div>
+                            <h2 class="read-more text-center">Read More</h2>
                         </div>
+                    </div>
+                    <div class="col-xs-12 text-center wow fadeIn" data-wow-duration="2.5s" data-wow-delay="1.5s">
+                        <button class="btn button-default">View All Blogs</button>
                     </div>
                 </div>
             </div>
@@ -223,13 +261,13 @@
                     <div class="section-heading text-right wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="0.3s">
                         <h2><span>Client Talks</span>The Happy Customer</h2>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                         <div class="test-box-inner">
                             <div class="row">
-                                <div class="col-xs-6 wow flipInY" data-wow-duration="2.5s" data-wow-delay="0.6s">
+                                <div class="col-xs-6 mob-full wow flipInY" data-wow-duration="2.5s" data-wow-delay="0.6s">
                                     <img class="img-responsive center-block" width="200px" src="img/testimonial/sapna.png">
                                 </div>
-                                <div class="col-xs-6 wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="0.9s">
+                                <div class="col-xs-6 mob-full wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="0.9s">
                                     <div class="client-name">
                                         <h3>Sapna Dand</h3>
                                         <p><em>With Casper & Junior</em></p>
@@ -297,7 +335,7 @@
             <div class="contact-map wow slideInLeft" data-wow-duration="2.5s" data-wow-delay="0.5s">
                 <img class="img-responsive" src="img/contact/map.png">
             </div>
-            <div class="contact-dog-img wow slideInUp" data-wow-duration="2.5s" data-wow-delay="0.5s">
+            <div class="contact-dog-img wow slideInLeft" data-wow-duration="2.5s" data-wow-delay="0.8s">
                 <img class="img-responsive" src="img/contact/dog.png">
             </div>
         </div>
