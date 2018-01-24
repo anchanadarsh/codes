@@ -1,0 +1,29 @@
+body {
+  font-size: 16px;
+  color: white; }
+
+.backtoalbum {
+  display: none; }
+
+.fullwidth {
+  width: 100%; }
+
+#gallery-main-box {
+  background: black; }
+  #gallery-main-box .gallery-box {
+    position: relative;
+    margin-bottom: 40px;
+    cursor: pointer; }
+    #gallery-main-box .gallery-box img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 5px solid white; }
+      #gallery-main-box .gallery-box img:nth-child(1) {
+        position: static; }
+      #gallery-main-box .gallery-box img:nth-last-child(2) {
+        transform: rotate(3deg); }
+      #gallery-main-box .gallery-box img:nth-last-child(3) {
+        transform: rotate(-3deg); }
+
+/*# sourceMappingURL=style.css.map */

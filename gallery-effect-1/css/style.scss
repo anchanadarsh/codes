@@ -1,0 +1,36 @@
+body {
+    font-size: 16px;
+    color: white;
+}
+
+.backtoalbum{
+    display: none;
+}
+
+.fullwidth{
+    width: 100%;
+}
+
+#gallery-main-box {
+    background: black;
+    .gallery-box {
+        position: relative;
+        margin-bottom: 40px;
+        cursor: pointer;
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border: 5px solid white;
+            &:nth-child(1){
+                position: static;
+            }
+            &:nth-last-child(2){
+                transform: rotate(3deg);
+            }
+            &:nth-last-child(3){
+                transform: rotate(-3deg);
+            }
+        }
+    }
+}
