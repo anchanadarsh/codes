@@ -25,5 +25,8 @@ body {
         transform: rotate(3deg); }
       #gallery-main-box .gallery-box img:nth-last-child(3) {
         transform: rotate(-3deg); }
+    #gallery-main-box .gallery-box .col-abs-rel {
+      position: absolute;
+      transition: position 0.3s linear; }
 
 /*# sourceMappingURL=style.css.map */

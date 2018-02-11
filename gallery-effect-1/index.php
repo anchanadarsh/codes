@@ -27,14 +27,30 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 gallery-box-out">
                     <div class="gallery-box">
-                        <img class="img-responsive" src="img/1.jpg">
-                        <img class="img-responsive" src="img/2.jpg">
-                        <img class="img-responsive" src="img/3.jpg">
-                        <img class="img-responsive" src="img/4.jpg">
-                        <img class="img-responsive" src="img/5.jpg">
-                        <img class="img-responsive" src="img/6.jpg">
-                        <img class="img-responsive" src="img/7.jpg">
-                        <img class="img-responsive" src="img/8.jpg">
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-abs-rel">
+                            <img class="img-responsive" src="img/1.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-abs-rel">
+                            <img class="img-responsive" src="img/2.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-abs-rel">
+                            <img class="img-responsive" src="img/3.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-abs-rel">
+                            <img class="img-responsive" src="img/4.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-abs-rel">
+                            <img class="img-responsive" src="img/5.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-abs-rel">
+                            <img class="img-responsive" src="img/6.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-abs-rel">
+                            <img class="img-responsive" src="img/7.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-abs-rel">
+                            <img class="img-responsive" src="img/8.jpg">
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 gallery-box-out">
@@ -121,7 +137,7 @@
                         <img class="img-responsive" src="img/3.jpg">
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
