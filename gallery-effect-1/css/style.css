@@ -1,28 +1,37 @@
+/* line 1, D:/wamp/www/codes/gallery-effect-1/css/style.scss */
 body {
-  font-size: 16px;
+  font-size: 15px;
   color: white; }
 
+/* line 6, D:/wamp/www/codes/gallery-effect-1/css/style.scss */
 .backtoalbum {
   display: none; }
 
+/* line 10, D:/wamp/www/codes/gallery-effect-1/css/style.scss */
 .fullwidth {
   width: 100%; }
 
+/* line 14, D:/wamp/www/codes/gallery-effect-1/css/style.scss */
 #gallery-main-box {
   background: black; }
+  /* line 16, D:/wamp/www/codes/gallery-effect-1/css/style.scss */
   #gallery-main-box .gallery-box {
     position: relative;
     margin-bottom: 40px;
     cursor: pointer; }
+    /* line 20, D:/wamp/www/codes/gallery-effect-1/css/style.scss */
     #gallery-main-box .gallery-box img {
       position: absolute;
       left: 0;
       top: 0;
       border: 5px solid white; }
+      /* line 25, D:/wamp/www/codes/gallery-effect-1/css/style.scss */
       #gallery-main-box .gallery-box img:nth-child(1) {
         position: static; }
+      /* line 28, D:/wamp/www/codes/gallery-effect-1/css/style.scss */
       #gallery-main-box .gallery-box img:nth-last-child(2) {
         transform: rotate(3deg); }
+      /* line 31, D:/wamp/www/codes/gallery-effect-1/css/style.scss */
       #gallery-main-box .gallery-box img:nth-last-child(3) {
         transform: rotate(-3deg); }
 
