@@ -32,5 +32,9 @@ body {
                 transform: rotate(-3deg);
             }
         }
+        .col-abs-rel{
+            position: absolute;
+            transition: position 0.3s linear;
+        }
     }
 }
