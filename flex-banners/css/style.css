@@ -1,0 +1,70 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf); }
+.bg-red {
+  background: #F44336 !important; }
+
+.text-red {
+  color: #F44336 !important; }
+
+.bg-pink {
+  background: #E91E63 !important; }
+
+.text-pink {
+  color: #E91E63 !important; }
+
+.bg-purple {
+  background: #673AB7 !important; }
+
+.text-purple {
+  color: #673AB7 !important; }
+
+.bg-blue {
+  background: #2196F3 !important; }
+
+.text-blue {
+  color: #2196F3 !important; }
+
+.bg-cyan {
+  background: #00BCD4 !important; }
+
+.text-cyan {
+  color: #00BCD4 !important; }
+
+.bg-green {
+  background: #4CAF50 !important; }
+
+.text-green {
+  color: #4CAF50 !important; }
+
+.bg-yellow {
+  background: #FFEB3B !important; }
+
+.text-yellow {
+  color: #FFEB3B !important; }
+
+.bg-orange {
+  background: #FF5722 !important; }
+
+.text-orange {
+  color: #FF5722 !important; }
+
+.default-transition, #section-banner .int-banner {
+  transition: all 0.3s ease; }
+
+body {
+  font-family: Montserrat;
+  color: black;
+  font-size: 16px;
+  background: #009688; }
+
+#section-banner {
+  display: flex;
+  height: 100vh;
+  background: #009688; }
+  #section-banner .int-banner {
+    flex: 1; }
+  #section-banner .banner-active {
+    flex: 7; }
+
+/*# sourceMappingURL=style.css.map */
