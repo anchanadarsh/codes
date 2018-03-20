@@ -1,0 +1,32 @@
+/* All custom codes with comment */
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  font-size: 136px;
+  font-weight: bold; }
+
+#section-home1 {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  background: #e6e6e6; }
+  #section-home1 h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: teal; }
+
+.scroll-area {
+  position: relative;
+  overflow: hidden; }
+  .scroll-area .toLeft {
+    text-align: left;
+    position: relative;
+    left: 100%; }
+  .scroll-area .toRight {
+    text-align: right;
+    position: relative;
+    right: 100%; }
+
+/*# sourceMappingURL=style.css.map */
