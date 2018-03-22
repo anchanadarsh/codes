@@ -27,7 +27,21 @@ $(window).scroll(function () {
     if (winScroll > startAnim) {
         var posElem = 100 - (((winScroll - startAnim) / winHeight) * 100);
         console.log("pos : " + posElem);
-        $('.scroll-area .toLeft').css('left', posElem + '%');
-        $('.scroll-area .toRight').css('right', posElem + '%');
+        var itemH = $('.scroll-area h1').outerHeight();
+        var itemHperc = (itemH / winHeight) * 100;
+        $('.toRight').each(function () {
+            var indR = $(this).index();
+            console.log(indR);
+            var assindR = posElem + ((indR) * itemHperc);
+            console.log(assindR);
+            $(this).css('right', assindR + '%');
+        });
+        $('.toLeft').each(function () {
+            var indL = $(this).index();
+            console.log(indL);
+            var assindL = posElem + ((indL) * itemHperc);
+            console.log(assindL);
+            $(this).css('left', assindL + '%');
+        });
     }
 });
