@@ -41,7 +41,18 @@ $(document).ready(function () {
 
     $(".onlyletter").keypress(function (event) {
         var inputValue = event.charCode;
+        //        console.log(event);
+        //        console.log(inputValue);
         if (!(inputValue >= 65 && inputValue <= 120) && (inputValue != 32 && inputValue != 0)) {
+            event.preventDefault();
+        }
+    });
+
+    $(".onlynumber").keypress(function (event) {
+        var inputValue = event.charCode;
+        //        console.log(event);
+        //        console.log(inputValue);
+        if (!(inputValue >= 48 && inputValue <= 57) && (inputValue != 43)) {
             event.preventDefault();
         }
     });
