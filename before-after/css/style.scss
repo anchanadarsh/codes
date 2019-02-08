@@ -1,0 +1,70 @@
+/* All custom codes with comment */
+
+$color-primary:#d1034b;
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-white {
+    color: white!important;
+}
+
+.text-primary {
+    color: $color-primary!important;
+}
+
+.relative-box {
+    position: relative;
+    width: 100%;
+    float: left;
+    min-height: 1px;
+}
+
+.full-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.default-transition {
+    transition: all 0.3s linear;
+}
+
+.creativity-section {
+    @extend .relative-box;
+    height: 100vh;
+    text-align: center;
+    cursor: e-resize;
+    #creativity-box {
+        @extend .full-overlay;
+//        @extend .default-transition;
+        overflow: hidden;
+        background-image: url(../img/1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right;
+        .box-head {
+            position: absolute;
+            margin: 0;
+            font-size: 150px;
+            font-weight: 900;
+        }
+    }
+    #creativity-box-1 {
+        @extend #creativity-box;
+        z-index: 2;
+        background-image: url(../img/2.jpg);
+    }
+    
+    .move_button{
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        top: 50%;
+    }
+}

@@ -26,7 +26,7 @@
                 </div>
                 <div class="sb-form-input">
                     <p>Phone</p>
-                    <input class="contact-field" type="text" placeholder="" name="en-phone">
+                    <input class="onlynumber contact-field" type="text" placeholder="" name="en-phone">
                 </div>
                 <div class="sb-form-input">
                     <p>Query</p>
