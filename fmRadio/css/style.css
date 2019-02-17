@@ -1,0 +1,171 @@
+html,
+body {
+  margin: 0;
+  background: #fafafa; }
+
+#base {
+  position: absolute;
+  height: 280px;
+  width: 280px;
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  margin-left: -140px;
+  border-radius: 140px;
+  border: 2px solid #fcfcfc;
+  box-sizing: border-box;
+  background: #fafafa;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  background: radial-gradient(transparent 115px, #fafafa 115px), radial-gradient(#fafafa 90px, transparent 9px), linear-gradient(90deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(120deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(150deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(180deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(210deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(240deg, transparent 49.5%, #ccc 50%, transparent 50%), radial-gradient(transparent 106px, #fafafa 106px), linear-gradient(264deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(258deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(252deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(246deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(234deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(228deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(222deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(216deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(204deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(198deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(192deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(186deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(174deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(168deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(162deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(156deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(144deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(138deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(132deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(126deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(114deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(108deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(102deg, transparent 49.5%, #ccc 50%, transparent 50%), linear-gradient(96deg, transparent 49.5%, #ccc 50%, transparent 50%), transparent;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  #base #knobshadow {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 100px;
+    background: transparent;
+    box-shadow: 20px 30px 60px rgba(0, 0, 0, 0.08); }
+  #base #knob {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 100px;
+    border: 2px solid #f9f9f9;
+    box-sizing: border-box;
+    background: #f8f8f8; }
+    #base #knob:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 10px;
+      top: 35px;
+      left: 30px;
+      transform: rotate(45deg);
+      background: #c6c6c6; }
+    #base #knob #knobdimple {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      top: 18%;
+      left: 18%;
+      border-radius: 100px;
+      background: #f0f0f0;
+      background: radial-gradient(ellipse at left top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+      border: 1px solid #f4f4f4;
+      transform: inherit; }
+
+#fmRadiodegreeRotateCount {
+  position: absolute;
+  text-align: center;
+  height: 20px;
+  left: 0;
+  width: 100%;
+  top: 80%;
+  font-size: 32px;
+  font-weight: 100;
+  color: #d5d5d5; }
+
+#fmRadio {
+  border: 2px solid black;
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  padding: 50px; }
+  #fmRadio #fmRadioMeter {
+    border: 2px solid black;
+    width: 500px;
+    height: 100px;
+    margin: auto;
+    position: relative; }
+    #fmRadio #fmRadioMeter .fmRadioIndicator {
+      display: inline-block;
+      background-color: red;
+      height: 70px;
+      width: 2px;
+      position: absolute;
+      top: 0;
+      left: 10px; }
+    #fmRadio #fmRadioMeter .fmRadioMeterScale {
+      position: absolute;
+      bottom: 0;
+      height: 25px;
+      width: 100%; }
+      #fmRadio #fmRadioMeter .fmRadioMeterScale .fmRadioFrequency {
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        background-color: #333; }
+        #fmRadio #fmRadioMeter .fmRadioMeterScale .fmRadioFrequency:nth-child(1) {
+          left: 16.66%; }
+        #fmRadio #fmRadioMeter .fmRadioMeterScale .fmRadioFrequency:nth-child(2) {
+          left: 33.32%; }
+        #fmRadio #fmRadioMeter .fmRadioMeterScale .fmRadioFrequency:nth-child(3) {
+          left: 49.98%; }
+        #fmRadio #fmRadioMeter .fmRadioMeterScale .fmRadioFrequency:nth-child(4) {
+          left: 66.64%; }
+        #fmRadio #fmRadioMeter .fmRadioMeterScale .fmRadioFrequency:nth-child(5) {
+          left: 83.3%; }
+        #fmRadio #fmRadioMeter .fmRadioMeterScale .fmRadioFrequency .freqName {
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%) translateY(100%); }
+        #fmRadio #fmRadioMeter .fmRadioMeterScale .fmRadioFrequency .fmAudios {
+          display: none; }
+  #fmRadio #fmRadioSwitch {
+    border: 2px solid black;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    width: 100px;
+    height: 50px; }
+    #fmRadio #fmRadioSwitch .fmSwitch_buttons, #fmRadio #fmRadioSwitch #fmOn, #fmRadio #fmRadioSwitch #fmOff {
+      position: absolute;
+      top: 50%;
+      font-weight: bold;
+      transform: translateY(-50%);
+      display: inline-block;
+      cursor: pointer; }
+    #fmRadio #fmRadioSwitch #fmOn {
+      color: rgba(0, 128, 0, 0.3);
+      margin-right: 10px;
+      left: 10px; }
+      #fmRadio #fmRadioSwitch #fmOn.active {
+        color: green; }
+    #fmRadio #fmRadioSwitch #fmOff {
+      color: rgba(255, 0, 0, 0.3);
+      right: 10px; }
+      #fmRadio #fmRadioSwitch #fmOff.active {
+        color: red; }
+  #fmRadio #fmRadioKnob {
+    border: 2px solid black;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: teal;
+    cursor: pointer; }
+    #fmRadio #fmRadioKnob #knobHolder {
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: #000; }
+
+/*# sourceMappingURL=style.css.map */
