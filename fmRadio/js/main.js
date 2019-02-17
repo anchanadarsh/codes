@@ -12,6 +12,7 @@ $(document).ready(function () {
             console.log('radio is on');
         } else {
             console.log('radio is off');
+            $('.fmAudios').trigger('pause');
         }
     });
 
