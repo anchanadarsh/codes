@@ -21,13 +21,12 @@ $(document).ready(function () {
         var getPerc = (value / 360) * 100;
         var getPercToFixed = getPerc.toFixed(2);
         $('.fmRadioIndicator').css('left', getPercToFixed + '%');
-        playAudio(getPercToFixed);
+        playAudioOnDrag(getPercToFixed);
     }
 
-    //function to play audio
-    var playAudio = function (value) {
+    //function to play audio on drag
+    var playAudioOnDrag = function (value) {
         switch (value) {
-
             case '16.67':
                 $('.fmAudios').trigger('pause');
                 $('#fmAudio1').trigger('play');
