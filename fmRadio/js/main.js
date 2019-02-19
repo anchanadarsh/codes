@@ -1,76 +1,90 @@
 $(document).ready(function () {
 
-    var rotationSnap = 5;
-    var getfmRadiodegreeRotateCount = 0;
+    var radioIsOn = false;
+
+    //function to play audio on drag
+    var playAudio = function (value) {
+        if (radioIsOn) {
+            switch (value) {
+                case 16:
+                    $('.fmAudios').trigger('pause');
+                    $('#fmAudio1').trigger('play');
+                    break;
+                case 33:
+                    $('.fmAudios').trigger('pause');
+                    $('#fmAudio2').trigger('play');
+                    break;
+                case 50:
+                    $('.fmAudios').trigger('pause');
+                    $('#fmAudio3').trigger('play');
+                    break;
+                case 66:
+                    $('.fmAudios').trigger('pause');
+                    $('#fmAudio4').trigger('play');
+                    break;
+                case 83:
+                    $('.fmAudios').trigger('pause');
+                    $('#fmAudio5').trigger('play');
+                    break;
+                default:
+                    $('.fmAudios').trigger('pause');
+            }
+        }
+    }
+
+    var getLeftValue = function (target) {
+        var getLeftVal = $(target).css('left');
+        return getLeftVal;
+    }
+
+    var moveIndicator = function (value) {
+        $('.fmRadioIndicator').css('left', value + 'px');
+        var a = value / 5;
+        playAudio(Math.floor(a));
+    }
+
+    var stationNext = function () {
+        var getCurrentStation = $('.fmRadioMeterScale').find('.active');
+        getCurrentStation.next().trigger('click');
+    }
+
+    var stationPrev = function () {
+        var getCurrentStation = $('.fmRadioMeterScale').find('.active');
+        getCurrentStation.prev().trigger('click');
+    }
 
     //switch radio on off
     $('#fmRadioSwitch span').on('click', function () {
         $('#fmRadioSwitch span').removeClass('active');
         $(this).addClass('active');
-        var radioIsOn = $('#fmOn').hasClass('active');
-        if (radioIsOn) {
-            console.log('radio is on');
-        } else {
-            console.log('radio is off');
-            $('.fmAudios').trigger('pause');
-        }
     });
 
-    //function to move indicator
-    var moveRadioIndicator = function (value) {
-        var getPerc = (value / 360) * 100;
-        var getPercToFixed = getPerc.toFixed(2);
-        $('.fmRadioIndicator').css('left', getPercToFixed + '%');
-        playAudioOnDrag(getPercToFixed);
-    }
+    $('#fmOn').on('click', function () {
+        radioIsOn = true;
+        var getActiveStation = $('.fmRadioMeterScale').find('.active');
+        $(getActiveStation).find('audio').trigger('play');
+    });
 
-    //function to play audio on drag
-    var playAudioOnDrag = function (value) {
-        switch (value) {
-            case '16.67':
-                $('.fmAudios').trigger('pause');
-                $('#fmAudio1').trigger('play');
-                break;
-            case '33.33':
-                $('.fmAudios').trigger('pause');
-                $('#fmAudio2').trigger('play');
-                break;
-            case '50.00':
-                $('.fmAudios').trigger('pause');
-                $('#fmAudio3').trigger('play');
-                break;
-            case '66.67':
-                $('.fmAudios').trigger('pause');
-                $('#fmAudio4').trigger('play');
-                break;
-            case '83.33':
-                $('.fmAudios').trigger('pause');
-                $('#fmAudio5').trigger('play');
-                break;
-            default:
-                $('.fmAudios').trigger('pause');
-        }
-    }
+    $('#fmOff').on('click', function () {
+        radioIsOn = false;
+        $('.fmAudios').trigger('pause');
+    });
 
-    //function to get amount to which indicator should move
-    var getvalInDegree = function (value) {
-        var getQuotient = Math.floor(value / 360);
-        var getDeg = value - (getQuotient * 360);
-        moveRadioIndicator(getDeg);
-    }
 
-    //knob drag gsoc function
-    Draggable.create("#fmRadioKnob", {
-        type: "rotation",
-        maxRotation: 360,
-        onDrag: function () {
-            var getDegreeAmt = Math.round(this.rotation);
-            $('#fmRadiodegreeRotateCount').html(getDegreeAmt);
-            getvalInDegree(getDegreeAmt);
-        },
-        snap: function (endValue) {
-            return Math.round(endValue / rotationSnap) * rotationSnap;
-        }
+    $('.fmRadioFrequency').on('click', function () {
+        $('.fmRadioFrequency').removeClass('active');
+        $(this).addClass('active');
+        var getFreqLeftVal = getLeftValue(this);
+        var trimmedVal = parseFloat(getFreqLeftVal.replace('px', '')).toFixed(2);
+        moveIndicator(trimmedVal);
+    });
+
+    $('#fmRadioBtnPrev').on('click', function () {
+        stationPrev();
+    });
+
+    $('#fmRadioBtnNext').on('click', function () {
+        stationNext();
     });
 
 });
