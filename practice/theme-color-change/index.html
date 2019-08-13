@@ -106,7 +106,7 @@
             //            console.log('clear', instance);
         }).on('change', (color, instance) => {
             var getHex = color.toHEXA().toString();
-            $('body').css('--primary_color', color.toHEXA().toString());
+            $('body').css('--primary_color', getHex);
             pickr1.applyColor({
                 silent: false
             });
@@ -173,7 +173,7 @@
         }).on('change', (color, instance) => {
             //            console.log('change', color, instance);
             var getHex = color.toHEXA().toString();
-            $('body').css('--secondary_color', color.toHEXA().toString());
+            $('body').css('--secondary_color', getHex);
             pickr2.applyColor({
                 silent: false
             });
