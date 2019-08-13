@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  --primary_color: #05FF00;
+  --secondary_color: #000000; }
+  body .header {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 100%; }
+    body .header .primary_area, body .header .secondary_area {
+      display: flex;
+      align-items: center;
+      padding: 10px; }
+      body .header .primary_area p, body .header .secondary_area p {
+        font-size: 20px;
+        margin: 0 10px; }
+  body .hero_box {
+    height: 80vh;
+    width: 100%;
+    background-color: var(--secondary_color);
+    display: flex;
+    align-items: center; }
+    body .hero_box h1 {
+      text-align: center;
+      color: var(--primary_color);
+      width: 100%;
+      font-size: 100px; }
+  body .three_box_section {
+    display: flex;
+    padding: 10vh 10vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondary_color); }
+    body .three_box_section .box {
+      height: 600px;
+      width: 400px;
+      background-color: var(--primary_color); }
+  body .two_box_section {
+    display: flex;
+    background-color: var(--secondary_color); }
+    body .two_box_section .box1 {
+      width: 65%;
+      height: 60vh;
+      background-color: var(--primary_color); }
+  body .footer {
+    background-color: var(--secondary_color);
+    padding: 20px; }
+    body .footer p {
+      text-align: center;
+      color: var(--primary_color); }
+
+/*# sourceMappingURL=style.css.map */
